@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  code-couch-db:
+    image: mysql
+    container_name: code-couch-db
+    ports:
+      - 3002:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "bad"

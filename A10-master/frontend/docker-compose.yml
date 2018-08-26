@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+
+  code-couch-frontend:
+    container_name: code-couch-frontend
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development

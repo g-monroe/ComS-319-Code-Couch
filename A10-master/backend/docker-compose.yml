@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  code-couch-backend:
+    container_name: code-couch-backend
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - '3001:443'
